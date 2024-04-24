@@ -10,3 +10,4 @@
   LV-HBA [Yao et al., 2023] and GA [Xu and Zhu, 2023]. The details of their experiments can be seen also at
   https://github.com/SUSTech-Optimization/LV-HBA
   https://github.com/xsy786912649/Efficient-gradient-approximation-method-for-constrained-bilevel-optimization-problem
+  `diabete.txt` is the data file that the SVM experiment is performed on.
