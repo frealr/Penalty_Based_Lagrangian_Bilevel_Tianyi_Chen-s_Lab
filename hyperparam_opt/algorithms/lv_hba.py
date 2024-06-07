@@ -64,7 +64,7 @@ class LinearSVM(nn.Module):
         # relu = nn.LeakyReLU()
         # loss = torch.sum(relu(2*torch.sigmoid(-5.0*x)-1.0))
         loss= torch.sum(torch.exp(1-x))
-        loss += 0.5*torch.linalg.norm(self.C)**2
+        # loss += 0.5*torch.linalg.norm(self.C)**2
         return loss
 
     def loss_lower(self):
@@ -72,6 +72,7 @@ class LinearSVM(nn.Module):
         #c_exp=torch.exp(self.C)
         #xi_term = 0.5 * (torch.dot(c_exp, (self.xi)**2))
         loss =  w2# + xi_term
+        loss += 0.5*torch.linalg.norm(self.C)**2
         return loss
 
     def constrain_values(self, srt_id, y_pred, y_train):
