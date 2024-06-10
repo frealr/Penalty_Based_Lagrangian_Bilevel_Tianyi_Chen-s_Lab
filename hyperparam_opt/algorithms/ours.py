@@ -214,7 +214,8 @@ def ours(x_train, y_train, x_val, y_val, x_test, y_test, hparams, epochs, verbos
 
         ############# update on upper level variable C
         C_tensor_val = C_tensor.detach()
-        C_tensor_val -= eta*(gam*dual_variables_xi - gam*dual_variables_xi_F)
+        C_tensor_val -= eta*(C_tensor.grad.detach() + gam*dual_variables_xi - gam*dual_variables_xi_F) #the second gam* is due to the 1/gam in obj_F
+        #C_tensor_val -= eta*(gam*dual_variables_xi) - dual_variables_xi_F
         C_tensor_val = torch.maximum(C_tensor_val, torch.tensor(1e-4))[0,:]
         
         #################
@@ -313,7 +314,7 @@ if __name__ == "__main__":
         axis = np.mean(time_computation,axis=0)
 
         plt.rcParams.update({'font.size': 18})
-        plt.rcParams['font.sans-serif']=['Arial']
+        plt.rcParams['font.sans-serif']=['Arial']#如果要显示中文字体，则在此处设为：SimHei
         plt.rcParams['axes.unicode_minus']=False #显示负号
         axis=time_computation.mean(0)
         plt.figure(figsize=(8,6))
