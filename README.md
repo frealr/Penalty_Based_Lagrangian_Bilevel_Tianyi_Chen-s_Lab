@@ -13,7 +13,7 @@
 - `Transportation` folder contains experiments on some Network planning problems.
 - `toy_example.ipynb` presents 2 toy examples to show the penalty-based Lagrangian Algorithm can effectively work.
 
-## `hyperparam_opt` Folder
+## Carpeta `hyperparam_opt` 
 La carpeta `hyperparam_opt` contiene experimentos sobre la optimización de hiperparámetros de SVM. Se utiliza comúnmente para probar el rendimiento de los algoritmos BLO, tales como LV-HBA [Yao et al., 2023] y GA [Xu y Zhu, 2023]. Los detalles de sus experimentos también se pueden ver en:
 - [LV-HBA](https://github.com/SUSTech-Optimization/LV-HBA)
 - [Efficient Gradient Approximation Method](https://github.com/xsy786912649/Efficient-gradient-approximation-method-for-constrained-bilevel-optimization-problem)
@@ -23,7 +23,7 @@ La carpeta `hyperparam_opt` contiene experimentos sobre la optimización de hipe
 - Los conjuntos de datos incluyen el conjunto de datos de diabetes y el conjunto de datos fourclass.
 - Por favor, ejecutar el último notebook de Jupyter.
 
-## `Transportation` Folder
+## Carpeta `Transportation` 
 La carpeta `Transportation` contiene experimentos sobre el problema de diseño de redes de transporte.
 
 ## `toy_example.ipynb`
