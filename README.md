@@ -6,9 +6,9 @@ La carpeta `hyperparam_opt` contiene experimentos sobre la optimización de hipe
 - [Efficient Gradient Approximation Method](https://github.com/xsy786912649/Efficient-gradient-approximation-method-for-constrained-bilevel-optimization-problem)
 
 ### Contenido
-- Tres algoritmos están en archivos py en la carpeta `algorithms`.
+- Tres algoritmos están en archivos py en la carpeta `algorithms`. Los algoritmos ours (BLOCC) y LV-HBA resuelven dos formulaciones diferentes. Cada una va asociada a un fichero, teniendo ours.py, ours_reformulacion.py, lv_hba.py y lv_hba_reformulacion.py
 - Los conjuntos de datos incluyen el conjunto de datos de diabetes y el conjunto de datos fourclass.
-- Por favor, ejecutar el último notebook de Jupyter.
+- Por favor, ejecutar el notebook de Jupyter más actualizado. Los 4 últimos dígitos hacen referencia a la fecha de creación (dd/mm) de 2024.
 
 ## Carpeta `Transportation` 
 La carpeta `Transportation` contiene experimentos sobre el problema de diseño de redes de transporte.
